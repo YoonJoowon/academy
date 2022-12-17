@@ -31,11 +31,40 @@
         console.log(arr[arr.length-3])
 
         // 배열 push pop shift unshift splice concat
-        let raunbow = ['흰','노','초','검']
+        let rainbow = ['흰','노','초','검']
+               
+        rainbow.pop()
+        console.log(rainbow)
 
+        rainbow.shift()
+        console.log(rainbow)
 
+        rainbow.unshift('빨','주')
+        console.log(rainbow)
 
+        rainbow.push('파','남','보')
+        console.log(rainbow)
         
+        // splice  배열에서 원하는 인덱스 값, 갯수를 삭제하거나 삭제하고 추가
+        rainbow.splice(1,2) // 1자리부터 2개 데이터삭제
+        console.log(rainbow)
+        rainbow.splice(3) // 3자리부터 뒤에 전체 삭제 (값 안쓰면 다 삭제 해버림)
+        console.log(rainbow)
+        rainbow.splice(1,2,'주','노') // 1자리부터 2개 데이터 삭제하고, 그 자리에 '주','노'가 추가됨
+        console.log(rainbow)
+
+        // concat  두개의 배열을 연결
+        const rainbow2 = ['초','파','남','보']
+        rainbow.concat(rainbow2)
+        const a = rainbow.concat(rainbow2)
+        console.log(a)
+
+        // indexOf('a') - 배열에서 (중복되는 a 데이터가 존재해도)처음으로 a라는 데이터가 발견되는 인덱스를 반환
+        const nature = ['sky','sea','tree','sky','sky']
+        // nature.indexOf('sky')
+        console.log(nature.indexOf('sky'))
+
+
     </script>
 
     
