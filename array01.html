@@ -63,6 +63,16 @@
         const nature = ['sky','sea','tree','sky','sky']
         // nature.indexOf('sky')
         console.log(nature.indexOf('sky'))
+        console.log(nature.indexOf('mountain')) // indexOf 활용시 없는 데이터는 -1 반환
+
+        // lastIndexOf('b') - 배열이 중복되도 마지막에 있는 인덱스 값을 반환
+        console.log(nature.lastIndexOf('sky'))
+
+        // includes('c') - 배열에 들어가 있는 데이터는 true / 포함되지 않은 데이터는 false
+        console.log(nature.includes('tree'))
+        console.log(nature.includes('mountain'))
+
+
 
 
     </script>
