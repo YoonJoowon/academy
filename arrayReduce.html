@@ -66,8 +66,8 @@
 
         const names = ['messi','messi','son','son','ronaldo','son','son','messi']
         const dong = names.reduce((acc, cur)=>{
-            if(acc[cur]){
-                acc[cur] +=1
+            if(cur in acc){
+                acc[cur]++
             }
             else{acc[cur] = 1}
             return acc;
